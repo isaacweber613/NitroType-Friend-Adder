@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NitroType Friend Adder</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .bookmarklet {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #0078ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: grab;
+        }
+    </style>
 </head>
 <body>
     <h1>🔥 NitroType Friend Adder Bookmarklet 🔥</h1>
-    <p>Click below to copy the bookmarklet:</p>
-    <button onclick="copyBookmarklet()">Copy Bookmarklet</button>
-    <script>
-        function copyBookmarklet() {
-            const bookmarklet = "javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();";
-            navigator.clipboard.writeText(bookmarklet);
-            alert("✅ Bookmarklet copied! Add a new bookmark and paste it in the URL field.");
-        }
-    </script>
+    <p>Drag the button below to your bookmarks bar:</p>
+
+    <!-- Draggable Bookmarklet -->
+    <a class="bookmarklet" href="javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();">
+        ➕ Drag Me to Bookmarks
+    </a>
+
+    <p>After adding it to bookmarks, click it while on the <a href="https://www.nitrotype.com/friends" target="_blank">NitroType Friends Page</a>.</p>
 </body>
 </html>
