@@ -41,3 +41,15 @@ d = () => Math.random() * (1500 - 800) + 800; // Random delay between 0.8s and 1
 ## 💡 Credits
 Made with ❤️ by [isaacweber613](https://github.com/isaacweber613)  with the help of ChatGPT
 Feel free to **fork & improve**! 🚀
+
+---
+
+## ⚠️ Disclaimer
+This script is **not affiliated with or endorsed by NitroType**. Use at your own risk.
+
+- The author **is not responsible** for any consequences of using this script.
+- There is **no guarantee** that NitroType will always allow this to work.
+- Use this script **ethically and responsibly**.
+- By using this script, **you agree that the author is not liable** for any account issues, bans, or other consequences.
+
+If you have concerns about using this script, **do not use it**.
