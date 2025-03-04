@@ -23,8 +23,8 @@
     <h1>🔥 NitroType Friend Adder Bookmarklet 🔥</h1>
     <p>Drag the button below to your bookmarks bar:</p>
 
-    <!-- Draggable Bookmarklet with Short Name -->
-    <a class="bookmarklet" href="javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes("Add Friend")&&!b.classList.contains("is-success")),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked %27Add Friend%27 button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert("🎉 All friends added!")}b.length>0?c():alert("No %27Add Friend%27 buttons found!")})();">
+    <!-- Draggable Bookmarklet with Fixed Code -->
+    <a class="bookmarklet" href="javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();">
         NT Add
     </a>
 
