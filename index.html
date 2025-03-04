@@ -23,9 +23,9 @@
     <h1>🔥 NitroType Friend Adder Bookmarklet 🔥</h1>
     <p>Drag the button below to your bookmarks bar:</p>
 
-    <!-- Draggable Bookmarklet -->
-    <a class="bookmarklet" href="javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();">
-        ➕ Drag Me to Bookmarks
+    <!-- Draggable Bookmarklet with Short Name -->
+    <a class="bookmarklet" href="javascript:(function(){document.title='NT Add';let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();">
+        ➕ Drag to Bookmarks
     </a>
 
     <p>After adding it to bookmarks, click it while on the <a href="https://www.nitrotype.com/friends" target="_blank">NitroType Friends Page</a>.</p>
