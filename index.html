@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NitroType Friend Adder</title>
+</head>
+<body>
+    <h1>🔥 NitroType Friend Adder Bookmarklet 🔥</h1>
+    <p>Click below to copy the bookmarklet:</p>
+    <button onclick="copyBookmarklet()">Copy Bookmarklet</button>
+    <script>
+        function copyBookmarklet() {
+            const bookmarklet = "javascript:void(function(){let b=Array.from(document.querySelectorAll('.btn.btn--positive.btn--thinner')).filter(b=>b.innerText.includes('Add Friend')&&!b.classList.contains('is-success')),d=()=>Math.random()*(900-300)+300,i=0;function c(){i<b.length?(b[i].click(),console.log(`✅ Clicked 'Add Friend' button ${i+1} of ${b.length}`),i++,setTimeout(c,d())):alert('🎉 All friends added!')}b.length>0?c():alert('No Add Friend buttons found!')})();";
+            navigator.clipboard.writeText(bookmarklet);
+            alert("✅ Bookmarklet copied! Add a new bookmark and paste it in the URL field.");
+        }
+    </script>
+</body>
+</html>
