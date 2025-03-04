@@ -53,3 +53,10 @@ This script is **not affiliated with or endorsed by NitroType**. Use at your own
 - By using this script, **you agree that the author is not liable** for any account issues, bans, or other consequences.
 
 If you have concerns about using this script, **do not use it**.
+
+---
+
+## 🌐 Website
+Try the bookmarklet directly at:  
+🔗 **[NitroType Friend Adder](https://isaacweber613.github.io/NitroType-Friend-Adder/)**  
+
